@@ -1,0 +1,44 @@
+# 测试更改
+# ========== 服务器运维文件（仅本地使用） ==========
+passwords.sh
+*.ps1
+启动命令.md
+minIO启动命令.md
+CLAUDE.md
+docs/
+argue.md
+coding.md
+writeDocs.md
+# ========== AI 临时文件 ==========
+.claude/
+ai生成的临时讨论文档/
+
+# ========== 编译产物 ==========
+bin/
+*.exe
+sesame-test
+sesame-backend
+/backend/sesame-backend
+
+# ========== 本地配置（含真实密码） ==========
+configs/config.yaml
+configs/*.local.yaml
+.env
+.env.*
+
+# ========== 日志 ==========
+*.log
+logs/
+/root/sesame/Sesame-sauce/backend/test.log
+# ========== 依赖目录 ==========
+vendor/
+
+# ========== IDE ==========
+.idea/
+.vscode/
+*.swp
+.claude/
+# ========== OS ==========
+.DS_Store
+Thumbs.db
+backend/build.sh

@@ -1,0 +1,5 @@
+- 用户接口层：backend\handler
+- 基础CRUD：backend\infra\persistence
+- 应用层：backend\application
+- 领域层：backend\domain
+- 中间件基本都要放在backend\infra中

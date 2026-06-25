@@ -1,0 +1,67 @@
+# database:
+#   host: localhost
+#   port: 13306
+#   user: root
+#   password: ""
+#   dbname: sesame_sauce
+#   charset: utf8mb4
+
+# redis:
+#   host: localhost
+#   port: 6379
+#   password: ""
+#   db: 0
+
+# minio:
+#   endpoint: "localhost:19000"
+#   access_key_id: ""
+#   secret_access_key: ""
+#   use_ssl: false
+#   bucket: ""
+#   public_bucket: ""
+
+# kafka:
+#   brokers:
+#     - localhost:19092
+
+# elasticsearch:
+#   addresses:
+#     - http://localhost:9200
+
+# hashids:
+#   salt: ""
+#   min_length: 
+database:
+  host: localhost
+  port: 3306
+  user: zhongfabai
+  password: ""
+  dbname: sesame
+  charset: utf8mb4
+
+redis:
+  host: localhost
+  port: 16379
+  password: ""
+  db: 0
+
+minio:
+  endpoint: ""              # 后端内部连接 MinIO 的地址
+  external_endpoint: ""       # 对外暴露的访问地址，需与 Nginx 代理路径保持一致
+  access_key_id: ""
+  secret_access_key: ""
+  use_ssl: false
+  bucket: "sesame-sauce"
+  public_bucket: "sesame-sauce-public"
+
+kafka:
+  brokers:
+    - localhost:9092
+
+elasticsearch:
+  addresses:
+    - http://localhost:9200
+
+hashids:
+  salt: ""
+  min_length: 

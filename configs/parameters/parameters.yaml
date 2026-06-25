@@ -1,0 +1,43 @@
+upload:
+  max_size_mb: 500
+  max_concurrency: 3
+  presigned_expires_seconds: 3000
+  cover_max_size_mb: 5
+  allowed_video_formats: ["mp4", "mov", "webm"]
+  allowed_cover_formats: ["jpg", "jpeg", "png"]
+  m3u8_concurrency: 8
+
+progress:
+  ttl_seconds: 3600
+  aggregate_interval_minutes: 5
+  max_cache_per_user: 10
+
+cache:
+  video_detail:
+    ttl_seconds: 3600
+    jitter_seconds: 600
+    null_ttl_seconds: 60
+    mutex_ttl_seconds: 3
+  user_profile:
+    ttl_seconds: 3600
+    jitter_seconds: 600
+  category:
+    ttl_seconds: 7200
+
+counter:
+  flush:
+    interval_seconds: 60
+    dirty_threshold: 1000
+    batch_size: 500
+    lock_ttl_seconds: 600
+    retry_max: 3
+  base_cache:
+    ttl_seconds: 60
+    jitter_seconds: 20
+  cuckoo:
+    initial_capacity: 10000
+    expansion: 2
+  reconcile:
+    cron: "0 3 * * *"
+    auto_fix_threshold: 5
+    alert_threshold: 5

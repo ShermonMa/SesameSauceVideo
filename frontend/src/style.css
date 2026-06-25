@@ -1,0 +1,42 @@
+/*
+ * style.css
+ * 功能：全局样式（Bilibili 风主题色变量、最小化 reset）
+ * 时间戳：2026-04-26
+ */
+
+:root {
+  --bili-pink: #fb7299;
+  --bili-blue: #00a1d6;
+  --bili-text: #18191c;
+  --bili-text-light: #61666d;
+  --bili-bg: #f4f5f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  color: var(--bili-text);
+  background: var(--bili-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
